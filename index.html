@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juan López | Data Science & Quantitative Engineering</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            dark: {
+              900: '#0B0F17',
+              800: '#111827',
+              700: '#1F2937',
+              600: '#374151',
+            },
+            accent: {
+              blue: '#3B82F6',
+              cyan: '#06B6D4',
+              emerald: '#10B981',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-dark-900 text-gray-200 font-sans antialiased selection:bg-accent-blue selection:text-white">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-dark-900/80 backdrop-blur-md border-b border-gray-800/80">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="text-lg font-bold font-mono text-white tracking-tight hover:text-accent-blue transition">
+        &gt; juan_lopez<span class="text-accent-blue animate-pulse">_</span>
+      </a>
+      <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-400">
+        <a href="#about" class="hover:text-white transition">About</a>
+        <a href="#experience" class="hover:text-white transition">Experience</a>
+        <a href="#projects" class="hover:text-white transition">Projects</a>
+        <a href="#education" class="hover:text-white transition">Education</a>
+        <a href="#skills" class="hover:text-white transition">Stack</a>
+      </nav>
+      <div class="flex items-center space-x-3">
+        <a href="CV_Juan_Lopez.pdf" target="_blank" class="px-3.5 py-1.5 text-xs font-semibold rounded-lg bg-accent-blue text-white hover:bg-blue-600 transition flex items-center gap-2 shadow-lg shadow-blue-500/20">
+          <i class="fa-solid fa-file-pdf"></i> Resume CV
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="pt-32 pb-20 px-6 max-w-6xl mx-auto flex flex-col justify-center min-h-[85vh]">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-accent-blue text-xs font-mono font-medium mb-6 w-fit">
+      <span class="w-2 h-2 rounded-full bg-accent-emerald animate-pulse"></span>
+      3rd Year BSc Data Science @ UPV
+    </div>
+    <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight max-w-4xl">
+      Building robust <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent-blue via-accent-cyan to-accent-emerald">Data Engineering</span> & Quantitative Systems.
+    </h1>
+    <p class="mt-6 text-lg sm:text-xl text-gray-400 max-w-2xl leading-relaxed">
+      Data Science student at Universitat Politècnica de València. Ranked 1st in cohort with Academic Excellence Award. Focused on scalable pipelines, event-driven architectures, and ML models.
+    </p>
+
+    <!-- CTAs & Socials -->
+    <div class="mt-8 flex flex-wrap items-center gap-4">
+      <a href="mailto:juanlb2410@gmail.com" class="px-5 py-2.5 rounded-lg bg-white text-dark-900 font-semibold text-sm hover:bg-gray-200 transition flex items-center gap-2">
+        <i class="fa-solid fa-envelope"></i> Get in touch
+      </a>
+      <a href="https://github.com/Jlopvs24" target="_blank" class="px-5 py-2.5 rounded-lg bg-dark-800 border border-gray-700 text-gray-300 font-semibold text-sm hover:text-white hover:border-gray-500 transition flex items-center gap-2">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+      <a href="https://linkedin.com/in/tu-usuario-linkedin/" target="_blank" class="px-5 py-2.5 rounded-lg bg-dark-800 border border-gray-700 text-gray-300 font-semibold text-sm hover:text-white hover:border-gray-500 transition flex items-center gap-2">
+        <i class="fa-brands fa-linkedin"></i> LinkedIn
+      </a>
+    </div>
+
+    <!-- Quick Stats Grid -->
+    <div class="mt-14 grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="p-4 rounded-xl bg-dark-800/60 border border-gray-800">
+        <div class="text-2xl font-bold font-mono text-white">9.26 / 10</div>
+        <div class="text-xs text-gray-400 mt-1">Cumulative GPA</div>
+      </div>
+      <div class="p-4 rounded-xl bg-dark-800/60 border border-gray-800">
+        <div class="text-2xl font-bold font-mono text-accent-blue">Rank 1st</div>
+        <div class="text-xs text-gray-400 mt-1">Academic Excellence Award</div>
+      </div>
+      <div class="p-4 rounded-xl bg-dark-800/60 border border-gray-800">
+        <div class="text-2xl font-bold font-mono text-accent-cyan">7 Honors</div>
+        <div class="text-xs text-gray-400 mt-1">Matrículas de Honor</div>
+      </div>
+      <div class="p-4 rounded-xl bg-dark-800/60 border border-gray-800">
+        <div class="text-2xl font-bold font-mono text-accent-emerald">60% ROI</div>
+        <div class="text-xs text-gray-400 mt-1">UFC ML Betting System</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Leadership -->
+  <section id="experience" class="py-16 px-6 max-w-6xl mx-auto border-t border-gray-800/80">
+    <div class="flex items-center gap-3 mb-8">
+      <span class="text-accent-blue font-mono font-bold text-sm">01.</span>
+      <h2 class="text-2xl font-bold text-white tracking-tight">Experience & Leadership</h2>
+    </div>
+
+    <div class="p-6 sm:p-8 rounded-2xl bg-dark-800/40 border border-gray-800 hover:border-gray-700 transition">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+        <div>
+          <h3 class="text-xl font-bold text-white">Data Engineer & Project Manager</h3>
+          <div class="text-sm text-accent-blue font-medium mt-0.5">Sigma Data Club</div>
+        </div>
+        <div class="text-xs font-mono text-gray-400 bg-dark-700/50 px-3 py-1 rounded-full w-fit border border-gray-700/50">
+          2024 – Present | Valencia, Spain
+        </div>
+      </div>
+      <ul class="space-y-3 text-sm text-gray-300">
+        <li class="flex items-start gap-2">
+          <i class="fa-solid fa-angle-right text-accent-blue mt-1"></i>
+          <span><strong>Data Architecture & Leadership:</strong> Leading the data engineering team in designing and maintaining data pipelines and PostgreSQL databases for financial analytics.</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <i class="fa-solid fa-angle-right text-accent-blue mt-1"></i>
+          <span><strong>Data Ingestion Pipelines:</strong> Spearheading automated ETL processes to ensure high data quality, availability, and low latency for portfolio tracking and analytics systems.</span>
+        </li>
+        <li class="flex items-start gap-2">
+          <i class="fa-solid fa-angle-right text-accent-blue mt-1"></i>
+          <span><strong>Project Management:</strong> Overseeing technical project lifecycles, coordinating student teams, and driving institutional collaborations with investment groups and industry partners.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Featured Projects -->
+  <section id="projects" class="py-16 px-6 max-w-6xl mx-auto border-t border-gray-800/80">
+    <div class="flex items-center gap-3 mb-8">
+      <span class="text-accent-blue font-mono font-bold text-sm">02.</span>
+      <h2 class="text-2xl font-bold text-white tracking-tight">Featured Projects</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      
+      <!-- Project 1: UFC ML -->
+      <div class="p-6 rounded-2xl bg-dark-800/40 border border-gray-800 hover:border-gray-700 transition flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-xs font-mono text-accent-emerald bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-1 rounded-md">
+              Machine Learning & Betting
+            </span>
+            <a href="https://github.com/Jlopvs24/ufc-betting-ml" target="_blank" class="text-gray-400 hover:text-white text-lg transition">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">UFC Fight Prediction & Betting Recommender</h3>
+          <p class="text-sm text-gray-400 leading-relaxed">
+            End-to-end predictive pipeline using XGBoost and automated web scraping. Engineered micro-structural fight features and applied risk-managed bet sizing, achieving a <strong>60% ROI</strong> on historical out-of-sample bouts. Hosted as a Kaggle competition dataset.
+          </p>
+        </div>
+        <div class="mt-6 flex flex-wrap gap-2 text-xs font-mono text-gray-300">
+          <span class="bg-dark-700 px-2.5 py-1 rounded">Python</span>
+          <span class="bg-dark-700 px-2.5 py-1 rounded">XGBoost</span>
+          <span class="bg-dark-700 px-2.5 py-1 rounded">Scikit-learn</span>
+          <span class="bg-dark-700 px-2.5 py-1 rounded">Web Scraping</span>
+        </div>
+      </div>
+
+      <!-- Project 2: ETH Zürich Datathon -->
+      <div class="p-6 rounded-2xl bg-dark-800/40 border border-gray-800 hover:border-gray-700 transition flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-xs font-mono text-accent-cyan bg-cyan-500/10 border border-cyan-500/20 px-2.5 py-1 rounded-md">
+              NLP & LLM Systems
+            </span>
+            <a href="https://github.com/Jlopvs24/eth-datathon-robinreal" target="_blank" class="text-gray-400 hover:text-white text-lg transition">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">ETH Zürich Datathon (RobinReal Challenge)</h3>
+          <p class="text-sm text-gray-400 leading-relaxed">
+            Retrieval-augmented pipeline built to extract, index, and analyze complex unstructured business datasets under latency constraints. Integrated dense vector embeddings, cross-encoder reranking, and structured LLM extraction.
+          </p>
+        </div>
+        <div class="mt-6 flex flex-wrap gap-2 text-xs font-mono text-gray-300">
+          <span class="bg-dark-700 px-2.5 py-1 rounded">Python</span>
+          <span class="bg-dark-700 px-2.5 py-1 rounded">Vector DBs</span>
+          <span class="bg-dark-700 px-2.5 py-1 rounded">NLP / LLMs</span>
+          <span class="bg-dark-700 px-2.5 py-1 rounded">Embeddings</span>
+        </div>
+      </div>
+
+      <!-- Project 3: Automated Investment Dashboard -->
+      <div class="p-6 rounded-2xl bg-dark-800/40 border border-gray-800 hover:border-gray-700 transition flex flex-col justify-between md:col-span-2">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-xs font-mono text-accent-blue bg-blue-500/10 border border-blue-500/20 px-2.5 py-1 rounded-md">
+              Data Infrastructure
+            </span>
+            <a href="https://github.com/Jlopvs24" target="_blank" class="text-gray-400 hover:text-white text-lg transition">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Automated Investment & Portfolio Analytics Dashboard</h3>
+          <p class="text-sm text-gray-400 leading-relaxed">
+            Collaborative data architecture designed for the UPV Investment Club. Implemented automated data ingestion pipelines, relational PostgreSQL schemas for asset tracking, and quantitative risk metrics computation.
+          </p>
+        </div>
+        <div class="mt-6 flex flex-wrap gap-2 text-xs font-mono text-gray-300">
+          <span class="bg-dark-700 px-2.5 py-1 rounded">PostgreSQL</span>
+          <span class="bg-dark-700 px-2.5 py-1 rounded">SQL</span>
+          <span class="bg-dark-700 px-2.5 py-1 rounded">ETL</span>
+          <span class="bg-dark-700 px-2.5 py-1 rounded">Docker</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Education & International Programs -->
+  <section id="education" class="py-16 px-6 max-w-6xl mx-auto border-t border-gray-800/80">
+    <div class="flex items-center gap-3 mb-8">
+      <span class="text-accent-blue font-mono font-bold text-sm">03.</span>
+      <h2 class="text-2xl font-bold text-white tracking-tight">Education & Honors</h2>
+    </div>
+
+    <div class="space-y-6">
+      
+      <!-- UPV -->
+      <div class="p-6 rounded-2xl bg-dark-800/40 border border-gray-800">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+          <h3 class="text-lg font-bold text-white">BSc in Data Science</h3>
+          <span class="text-xs font-mono text-gray-400">2024 – Present</span>
+        </div>
+        <div class="text-sm text-gray-400 mb-4">Universitat Politècnica de València (UPV) • <strong class="text-white">9.26 / 10.0 GPA</strong></div>
+        <div class="p-4 rounded-xl bg-dark-900/60 border border-gray-800/80 space-y-2 text-xs sm:text-sm text-gray-300">
+          <div class="flex items-center gap-2 text-accent-blue font-semibold">
+            <i class="fa-solid fa-award"></i> Academic Excellence Award (Ranked 1st / 100+ students in cohort)
+          </div>
+          <div>
+            • <strong>7 Honors (Matrículas de Honor):</strong> Linear Algebra (9.9), Data Structures & Algorithms (9.9), Calculus, Databases, and core mathematics.
+          </div>
+        </div>
+      </div>
+
+      <!-- Beihang -->
+      <div class="p-6 rounded-2xl bg-dark-800/40 border border-gray-800">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+          <h3 class="text-lg font-bold text-white">Beihang International Summer School</h3>
+          <span class="text-xs font-mono text-gray-400">Jul 2026 | Beijing, China</span>
+        </div>
+        <div class="text-sm text-gray-400 mb-2">Beihang University</div>
+        <p class="text-xs sm:text-sm text-gray-300">
+          Selected for intensive coursework in Embodied AI, spatial intelligence, perception algorithms, and multi-agent distributed systems.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Technical Stack -->
+  <section id="skills" class="py-16 px-6 max-w-6xl mx-auto border-t border-gray-800/80">
+    <div class="flex items-center gap-3 mb-8">
+      <span class="text-accent-blue font-mono font-bold text-sm">04.</span>
+      <h2 class="text-2xl font-bold text-white tracking-tight">Technical Stack</h2>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="p-5 rounded-xl bg-dark-800/40 border border-gray-800">
+        <div class="text-accent-blue text-sm font-bold font-mono mb-3 uppercase tracking-wider">Languages</div>
+        <div class="flex flex-wrap gap-1.5 text-xs text-gray-300">
+          <span class="bg-dark-700 px-2 py-1 rounded">Python (Async/OOP)</span>
+          <span class="bg-dark-700 px-2 py-1 rounded">SQL</span>
+          <span class="bg-dark-700 px-2 py-1 rounded">C++</span>
+          <span class="bg-dark-700 px-2 py-1 rounded">R</span>
+        </div>
+      </div>
+
+      <div class="p-5 rounded-xl bg-dark-800/40 border border-gray-800">
+        <div class="text-accent-cyan text-sm font-bold font-mono mb-3 uppercase tracking-wider">Data & Systems</div>
+        <div class="flex flex-wrap gap-1.5 text-xs text-gray-300">
+          <span class="bg-dark-700 px-2 py-1 rounded">PostgreSQL</span>
+          <span class="bg-dark-700 px-2 py-1 rounded">Docker</span>
+          <span class="bg-dark-700 px-2 py-1 rounded">WebSockets</span>
+          <span class="bg-dark-700 px-2 py-1 rounded">Supabase</span>
+          <span class="bg-dark-700 px-2 py-1 rounded">Neo4j</span>
+        </div>
+      </div>
+
+      <div class="p-5 rounded-xl bg-dark-800/40 border border-gray-800">
+        <div class="text-accent-emerald text-sm font-bold font-mono mb-3 uppercase tracking-wider">ML & Modeling</div>
+        <div class="flex flex-wrap gap-1.5 text-xs text-gray-300">
+          <span class="bg-dark-700 px-2 py-1 rounded">XGBoost</span>
+          <span class="bg-dark-700 px-2 py-1 rounded">Scikit-learn</span>
+          <span class="bg-dark-700 px-2 py-1 rounded">Pandas / NumPy</span>
+          <span class="bg-dark-700 px-2 py-1 rounded">NLP / LLMs</span>
+        </div>
+      </div>
+
+      <div class="p-5 rounded-xl bg-dark-800/40 border border-gray-800">
+        <div class="text-yellow-400 text-sm font-bold font-mono mb-3 uppercase tracking-wider">Languages (Spoken)</div>
+        <div class="flex flex-wrap gap-1.5 text-xs text-gray-300">
+          <span class="bg-dark-700 px-2 py-1 rounded">English (C1 Advanced)</span>
+          <span class="bg-dark-700 px-2 py-1 rounded">Spanish (Native)</span>
+          <span class="bg-dark-700 px-2 py-1 rounded">Valencian (C1)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-12 border-t border-gray-800/80 text-center text-xs text-gray-500">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>Designed & Built by Juan López Blasco.</div>
+      <div class="flex gap-6 text-base text-gray-400">
+        <a href="https://github.com/Jlopvs24" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-github"></i></a>
+        <a href="https://linkedin.com/in/tu-usuario-linkedin/" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:juanlb2410@gmail.com" class="hover:text-white transition"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
